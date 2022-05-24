@@ -4,3 +4,9 @@ body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
 }
+
+.info {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
