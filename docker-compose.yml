@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  reverse-proxy:
+    image: traefik:v2.5
+    command: --providers.docker
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    restart: always
+
+  app:
+    image: constitution
+    labels:
+      - "traefik.http.routers.app.rule=Host(`${APP_HOST}`)"
+    restart: always
