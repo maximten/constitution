@@ -13,6 +13,7 @@ const Home: NextPage = () => {
       <div className='info'>
         <a href="http://law.gov.kz/client/#!/doc/1/rus">Старая версия</a>
         <a href="https://kazpravda.kz/n/proekt-zakon-rk-o-vnesenii-izmeneniy-i-dopolneniy-v-konstitutsiyu-respubliki-kazahstan/">Правки</a>
+        <a href="https://github.com/maximten/constitution">Github</a>
       </div>
       <ReactDiffViewer 
         oldValue={oldConstitution} 
