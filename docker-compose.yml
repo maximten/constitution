@@ -14,5 +14,5 @@ services:
   app:
     image: constitution
     labels:
-      - "traefik.http.routers.app.rule=Host(`${APP_HOST}`)"
+      - "traefik.http.routers.app.rule=Host(`${APP_HOST}`,`${APP_IP}`)"
     restart: always
